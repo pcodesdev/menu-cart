@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  min-width: 320px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+header {
+  background-image: url("assets/food.jpg");
+  background-size: cover;
+  height: 150px;
+}
+
+.header-heading,
+.header-text {
+  color: #fff;
+}
+
+.header-heading {
+  margin: 0 0 0 1rem;
+  padding: 1rem;
+  font-family: "Pacifico", cursive;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.header-text {
+  margin: 0 0 1rem 1rem;
+  padding: 0 1rem;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.header-text span {
+  background-color: #0e0a09;
+}
+
+.item,
+.ordered-item,
+.total {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  /* gap: 1rem; */
+  padding: 1rem 0;
+}
+
+#item-delete-icon {
+  width: 50px;
+}
+
+/* .item-name,
+.item-price,
+.item-delete-icon {
+  flex-grow: 1;
+} */
+
+.border-bottom {
+  border-bottom: 2px solid #0e0a09;
+}
+
+.item-image {
+  width: 80px;
+}
+
+.item-add-icon {
+  width: 50px;
+}
+
+#item-delete-icon {
+  width: 50px;
+}
+
+.items-ordered-statement {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.btn {
+  width: 100%;
+  padding: 1rem;
+  color: #fff;
+  background-color: #16db99;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.btn-order {
+  display: none;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.card-details {
+  width: 500px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border: 1px solid #0e0a09;
+  box-shadow: 0px 10px 54px 0px #0e0a09;
+  margin: auto;
+  position: fixed;
+  display: none;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.card-details-display {
+  display: block;
+}
+
+.card-details form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-heading {
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 1rem;
+}
+
+.card-input {
+  width: 80%;
+  padding: 1rem 1.5rem;
+  margin: 1rem;
+  font-size: 1.2rem;
+}
+
+.input-btn {
+  width: 80%;
+  color: #fff;
+  background-color: #16db99;
+  font-weight: 700;
+  border: none;
+  border-radius: 0.5rem;
+  /* margin-bottom: 1rem; */
+}
+
+.input-btn:hover {
+  cursor: pointer;
+}
+
+.order-confirmation {
+  font-size: 2rem;
+  text-align: center;
+  padding: 1.5rem 3rem;
+  color: #065f46;
+  background-color: #ecfdf5;
+}
