@@ -1,9 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 
+/* root */
+:root {
+  --bg-color-light: #fff;
+  --text-color-light: #333;
+  --bg-color-dark: #16222e;
+  --text-color-dark: #fff;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
+  background-color: var(--bg-color-light);
+  color: var(--text-color-light);
+  transition: background-color 0.5s, color 0.5s;
+}
+
+/* dark mode */
+.dark-mode {
+  background-color: var(--bg-color-dark);
+  color: var(--text-color-dark);
+}
+
+/* Toggle Button */
+.theme-toggle {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  position: fixed;
+  top: 10px;
+  right: 80px;
+  color: #fff;
+  background-color: #003b27;
 }
 
 .container {
@@ -50,7 +81,7 @@ header {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
-  /* gap: 1rem; */
+  gap: 1rem;
   padding: 1rem 0;
 }
 
@@ -90,7 +121,7 @@ header {
   width: 50%;
   padding: 1rem;
   color: #fff;
-  background-color: #16db99;
+  background-color: #003b27;
   font-size: 1.5rem;
   font-weight: 500;
   border: none;
@@ -154,14 +185,14 @@ header {
 }
 
 input:focus {
-  border: 2px solid #16db99; /* Change the color to your preference */
+  border: 2px solid #003b27; /* Change the color to your preference */
   outline: none;
 }
 
 .input-btn {
   width: 80%;
   color: #fff;
-  background-color: #16db99;
+  background-color: #003b27;
   font-weight: 700;
   border: none;
   border-radius: 0.5rem;
@@ -201,5 +232,13 @@ input:focus {
   }
   .btn {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .theme-toggle {
+    top: 5px;
+    right: 30px;
+    padding: 0.5rem;
   }
 }

@@ -12,6 +12,25 @@ const formInputNameEl = document.getElementById("name");
 const formInputNumberEl = document.getElementById("card-number");
 const formInputCVVEl = document.getElementById("card-cvv");
 
+// change page theme color
+// Check for saved theme on page load
+document.addEventListener('DOMContentLoaded', (event) => {
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme) {
+    document.body.classList.add(savedTheme);
+  }
+});
+
+// Save theme preference on toggle
+document.getElementById('theme-toggle').addEventListener('click', function() {
+  const currentTheme = document.body.classList.contains('dark-mode') ? 'light-mode' : 'dark-mode';
+  document.body.classList.toggle('dark-mode');
+  localStorage.setItem('theme', currentTheme);
+});
+
+
+
+  // project main functionalities
 function displayMenuItems(items) {
   items.forEach((item) => {
     const divEl = document.createElement("div");
